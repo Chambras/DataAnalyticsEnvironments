@@ -25,7 +25,7 @@ env:
 
 jobs:
   codeAnalysisInfrastructure:
-    name: Code Analysis
+    name: Code Analysis Infrastructure
     uses: chambras/workflows/.github/workflows/staticCodeAnalysis.yml@main
     with:
       project-folder: Infrastructure/terraform-azure/
@@ -138,7 +138,8 @@ jobs:
     #   run: echo ${{ steps.outputwsid.outputs.stdout }}
 
   codeAnalysisDatabricks:
-    name: Code Analysis
+    name: Code Analysis Databricks
+    needs: [ infrastructure ]
     uses: chambras/workflows/.github/workflows/staticCodeAnalysis.yml@main
     with:
       project-folder: Infrastructure/terraform-databricks/
