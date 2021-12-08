@@ -6,13 +6,13 @@ terraform {
       name = "AfG-Databricks"
     }
   }
-  required_version = "= 1.0.8"
+  required_version = "= 1.0.11"
   required_providers {
     databricks = {
       source  = "databrickslabs/databricks"
-      version = "0.3.5"
+      version = "0.3.11"
     }
-    azurerm = "=2.80.0"
+    azurerm = "=2.88.1"
   }
 }
 

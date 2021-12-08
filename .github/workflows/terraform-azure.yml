@@ -92,7 +92,7 @@ jobs:
       working-directory: Infrastructure/terraform-azure/
     
     - name: Saving Plan
-      uses: actions/github-script@0.9.0
+      uses: actions/github-script@v5
       if: github.event_name == 'pull_request'
       env:
         PLAN_INFRA: "terraform\n${{ steps.plan.outputs.stdout }}"
@@ -163,7 +163,7 @@ jobs:
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v1
       with:
-        terraform_version: 1.0.8
+        terraform_version: 1.0.11
         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
@@ -192,7 +192,7 @@ jobs:
       working-directory: Infrastructure/terraform-databricks/
     
     - name: Saving Plan
-      uses: actions/github-script@0.9.0
+      uses: actions/github-script@v5
       if: github.event_name == 'pull_request' && needs.infrastructure.outputs.dbwsid != ''
       env:
         PLAN_DB: "terraform\n${{ steps.plan.outputs.stdout }}"
