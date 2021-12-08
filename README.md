@@ -52,10 +52,10 @@ It uses GitHub Actions in order to orchestrate the CI/CD pipeline.
 
 This project requires the following versions:
 
-- **Terraform** =>1.0.8
-- **Azure provider** 2.80.0
-- **Databricks provider** 0.3.5
-- **Azure CLI** 2.29.0
+- **Terraform** =>1.0.11
+- **Azure provider** 2.88.1
+- **Databricks provider** 0.3.11
+- **Azure CLI** 2.31.0
 - **ChefDK** 4.13.3
 
 It also uses GitHub Secrets to store all required keys and secrets. The following GitHub Secrets need to be created ahead of time:
@@ -75,11 +75,11 @@ There are 2 GitHub Actions Workflows that are used to automate the Infrastructur
 
 - **Chef-ApacheKafka** - Performs Static code analysis using **Cookstyle**, unit testing using **Chef InSpec**, and Integration tests using **Test Kitchen** to make sure the cookbook is properly tested before uploading it to the Chef Server.
 
-![Chef-ApacheKafka](Diagrams/Chef-ApacheKafka.png)
+![Chef-ApacheKafka](Diagrams/Chef-ApacheKafka-Workflow.png)
 
 - **Terraform-Azure** - Performs Terraform deployment using Terraform Cloud as remote state. It also creates a Databricks cluster and deploys a starter python notebook to test the connectivity to the Kafka server and retrieves the messages. All the infrastructure is created with proper naming convention and tagging.
 
-![Terraform-Azure](Diagrams/Terraform-Azure.png)
+![Terraform-Azure](Diagrams/Terraform-Azure-Workflow.png)
 
 ## devcontainer
 

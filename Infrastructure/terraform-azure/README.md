@@ -41,9 +41,9 @@ More information on this topic [here](https://docs.microsoft.com/en-us/azure/vir
 
 This terraform script has been tested using the following versions:
 
-- Terraform =>1.0.8
-- Azure provider 2.80.0
-- Azure CLI 2.29.0
+- Terraform =>1.0.11
+- Azure provider 2.88.1
+- Azure CLI 2.31.0
 
 ## VM Authentication
 
