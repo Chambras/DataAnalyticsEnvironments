@@ -22,7 +22,7 @@ resource "azurerm_network_interface" "kafkaNIC" {
 
   tags = var.tags
 }
-/*
+
 resource "azurerm_linux_virtual_machine" "kafkaServer" {
   name                = "${var.suffix}-KafkaServer"
   resource_group_name = azurerm_resource_group.genericRG.name
@@ -82,4 +82,3 @@ resource "azurerm_linux_virtual_machine" "kafkaServer" {
 
   tags = var.tags
 }
-*/

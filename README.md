@@ -1,6 +1,6 @@
 [![Terraform-Azure](https://github.com/Chambras/DataAnalyticsEnvironments/actions/workflows/terraform-azure.yml/badge.svg)](https://github.com/Chambras/DataAnalyticsEnvironments/actions/workflows/terraform-azure.yml)
 
-[![Chef-ApacheKafka](https://github.com/Chambras/AutomateForGood2021/actions/workflows/chef-kafka.yml/badge.svg)](https://github.com/Chambras/AutomateForGood2021/actions/workflows/chef-kafka.yml)
+[![Chef-ApacheKafka](https://github.com/Chambras/DataAnalyticsEnvironments/actions/workflows/chef-kafka.yml/badge.svg)](https://github.com/Chambras/DataAnalyticsEnvironments/actions/workflows/chef-kafka.yml)
 
 # Automating Data Analytics Environments
 
