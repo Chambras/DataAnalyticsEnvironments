@@ -4,8 +4,7 @@
 
 # Automating Data Analytics Environments
 
-Demo project presented at [Automate for Good 2021](https://chef-hackathon.devpost.com/).
-It shows how to integrate Chef Infra, Chef InSpec, Test Kitchen, Terraform, Terraform Cloud, and GitHub Actions in order to fully automate and create Data Analytics environments.
+This demo project shows how to integrate Chef Infra, Chef InSpec, Test Kitchen, Terraform, Terraform Cloud, and GitHub Actions in order to fully automate and create Data Analytics environments.
 
 This specific demo uses FAA's System Wide Information System (SWIM) and connects to TFMS ( Traffic Flow Management System ) using a Kafka server.
 More information about SWIM and TFMS can be found [here.](https://www.faa.gov/air_traffic/technology/swim/)
