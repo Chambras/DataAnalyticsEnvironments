@@ -90,7 +90,7 @@ variable "vmUserName" {
   default     = "kafkaAdmin"
   description = "Username to be added to the VM."
 }
-/*
+
 variable "sshKeyPath" {
   type        = string
   default     = "~/.ssh/vm_ssh.pub"
@@ -110,4 +110,3 @@ variable "validatorCertPath" {
   default     = "~/.ssh/chambras-validator.pem"
   description = "String to be written to file validation_key. Default to /etc/chef/validation.pem"
 }
-*/
