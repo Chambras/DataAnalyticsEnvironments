@@ -15,6 +15,9 @@ transport:
 
 provisioner:
   name: chef_zero
+  product_name: chef
+  product_version: 17.6.18
+  download_url: https://packages.chef.io/files/stable/chef/17.6.18/el/7/chef-17.6.18-1.el7.x86_64.rpm
 
 verifier:
   name: inspec
